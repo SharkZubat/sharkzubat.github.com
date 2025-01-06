@@ -8,14 +8,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
             section.style.display = 'none';
         });
 
+        let section;
         if (hash) {
-            const section = document.querySelector(hash);
-            if (section) {
-                // Show the relevant section
-                section.style.display = 'block';
-                // Update the document title
-                document.title = section.querySelector('h2').innerText + " - Shark Zubat's Website";
-            }
+            section = document.querySelector(hash);
+        } else {
+            section = document.querySelector('#videos');
+        }
+
+        if (section) {
+            // Show the relevant section
+            section.style.display = 'block';
+            // Update the document title
+            document.title = section.querySelector('h2').innerText + " - Shark Zubat's Website";
         }
     }
 
