@@ -11,12 +11,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }
     
-    sections.forEach(section => {
-        section.addEventListener('click', () => {
-            document.title = section.querySelector('h2').innerText + " - Shark Zubat's Website";
-        });
-    });
-    
     window.addEventListener('hashchange', updateTitle);
     
     // Update the title on initial load
