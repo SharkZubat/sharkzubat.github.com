@@ -32,7 +32,11 @@ main {
 }
 
 section {
-    margin-bottom: 2rem;
+    display: none;
+}
+
+section:target {
+    display: block;
 }
 
 footer {
