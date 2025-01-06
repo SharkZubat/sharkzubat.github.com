@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    const sections = document.querySelectorAll('section');
-    
     function updateTitle() {
         const hash = window.location.hash;
         if (hash) {
@@ -10,7 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             }
         }
     }
-    
+
     window.addEventListener('hashchange', updateTitle);
     
     // Update the title on initial load
